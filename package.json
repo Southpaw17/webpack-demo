@@ -7,7 +7,7 @@
     "webpack": "webpack",
     "prewebpack": "npm run clean",
     "clean": "rimraf ./dist",
-    "next-step": "git checkout step/one",
+    "next-step": "git checkout step/two",
     "postnext-step": "npm run webpack",
     "last-step": "git checkout master",
     "postlast-step": "npm run webpack"
@@ -27,6 +27,7 @@
   },
   "homepage": "https://github.com/Southpaw17/webpack-demo#readme",
   "devDependencies": {
+    "html-loader": "^0.5.5",
     "rimraf": "^2.6.2",
     "source-map-explorer": "^1.5.0",
     "webpack": "^3.11.0",

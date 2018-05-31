@@ -18,26 +18,12 @@ module.exports = {
             'node_modules'
         ]
     },
+    module: {
+        rules: [
+            { test: /\.html$/, use: [ 'html-loader' ]}
+        ]
+    },
     plugins: [
-        // Create a simple common bundle to extract shared code
-        // new webpack.optimize.CommonsChunkPlugin({
-        //     name: "common"
-        // }),
-
-        // Creating a dynamic Vendor Bundle which contains third party code
-        // new webpack.optimize.CommonsChunkPlugin({
-        //     name: "vendor",
-        //     minChunks: (module, count) => {
-        //         return module.resource.indexOf("node_modules") !== -1
-        //     }
-        // }),
-
-
-        // Extracting the Webpack Runtime into its own file
-        // new webpack.optimize.CommonsChunkPlugin({
-        //     name: "manifest",
-        //     minChunks: Infinity
-        // }),
         new BundleAnalyzerPlugin({
             analyzerMode: 'static',
             reportFilename: 'webpack-bundle-analyzer.html',
