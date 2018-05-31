@@ -1,0 +1,38 @@
+{
+  "name": "webpack-demo",
+  "version": "1.0.0",
+  "description": "A brief demonstration of how some of the features of webpack interact",
+  "main": "index.js",
+  "scripts": {
+    "webpack": "webpack",
+    "prewebpack": "npm run clean",
+    "clean": "rimraf ./dist",
+    "next-step": "git checkout step/one",
+    "postnext-step": "npm run webpack",
+    "last-step": "git checkout master",
+    "postlast-step": "npm run webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Southpaw17/webpack-demo.git"
+  },
+  "keywords": [
+    "webpack",
+    "demo"
+  ],
+  "author": "Frank Bruzzese <bruzzese.frank@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Southpaw17/webpack-demo/issues"
+  },
+  "homepage": "https://github.com/Southpaw17/webpack-demo#readme",
+  "devDependencies": {
+    "rimraf": "^2.6.2",
+    "source-map-explorer": "^1.5.0",
+    "webpack": "^3.11.0",
+    "webpack-bundle-analyzer": "^2.13.1"
+  },
+  "dependencies": {
+    "third-party-one": "file:packages/third-party-one"
+  }
+}
