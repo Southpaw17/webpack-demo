@@ -1,5 +1,1 @@
-
-angular.module('mostly.common.component', [])
-.service('MostlyCommonService', function() {
-    console.log("I'm a mostly common service!");
-});
+export default 'Hello from a Mostly Common Component!';
