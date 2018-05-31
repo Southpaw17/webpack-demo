@@ -7,6 +7,7 @@ module.exports = {
         two: 'src/apps/app.two.js',
         three: 'src/apps/app.three.js'
     },
+    devtool: 'source-map',
     output: {
         path: __dirname + '/dist/',
         filename: '[name].bundle.js',
