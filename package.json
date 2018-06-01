@@ -9,7 +9,7 @@
     "clean": "rimraf ./dist",
     "next-step": "git checkout step/four",
     "postnext-step": "npm run webpack",
-    "last-step": "git checkout step-two",
+    "last-step": "git checkout step/two",
     "postlast-step": "npm run webpack"
   },
   "repository": {
