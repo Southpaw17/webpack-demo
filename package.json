@@ -4,12 +4,12 @@
   "description": "A brief demonstration of how some of the features of webpack interact",
   "main": "index.js",
   "scripts": {
-    "webpack": "webpack -p",
+    "webpack": "webpack",
     "prewebpack": "npm run clean",
     "clean": "rimraf ./dist",
-    "next-step": "git checkout step/five",
+    "next-step": "git checkout step/six",
     "postnext-step": "npm run webpack",
-    "last-step": "git checkout step/three",
+    "last-step": "git checkout step/four",
     "postlast-step": "npm run webpack"
   },
   "repository": {

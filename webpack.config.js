@@ -25,6 +25,14 @@ module.exports = {
         ]
     },
     plugins: [
+        // Create a simple common bundle to extract shared code
+        // This current setup uses a 'shared-by-every' strategy
+        // For more information on the different strategies, see
+        // https://engconf.int.kronos.com/display/FT/Webpack
+        new webpack.optimize.CommonsChunkPlugin({
+            name: "common",
+            // minChunks: 2     // Uncommenting this will switch to a 'shared-by-any' strategy
+        }),
         new BundleAnalyzerPlugin({
             analyzerMode: 'static',
             reportFilename: 'webpack-bundle-analyzer.html',
