@@ -1,10 +1,10 @@
 define([
     'third-party-one',
-    'lodash',
+    'lodash/toLower',
     '../components/common.component'
-], function(tpo, _) {
+], function(tpo, toLower) {
 
     tpo.AwesomeFunc();
 
-    return _.toLower('Hello from App Number Three!');
+    return toLower('Hello from App Number Three!');
 });

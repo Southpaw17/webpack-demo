@@ -33,6 +33,13 @@ module.exports = {
             name: "common",
             // minChunks: 2     // Uncommenting this will switch to a 'shared-by-any' strategy
         }),
+         // Creating a dynamic Vendor Bundle which contains third party code
+        new webpack.optimize.CommonsChunkPlugin({
+            name: "vendor",
+            minChunks: (module, count) => {
+                return module.resource.indexOf("node_modules") !== -1
+            }
+        }),
         new BundleAnalyzerPlugin({
             analyzerMode: 'static',
             reportFilename: 'webpack-bundle-analyzer.html',

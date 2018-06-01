@@ -1,8 +1,7 @@
 import * as tpo from 'third-party-one';
-import _ from 'lodash';
+import { toLower } from 'lodash/toLower';
 
 import '../components/common.component';
 import '../components/mostly.common.component';
 
-
-export default _.toLower('Hello from App Number One!');
+export default toLower('Hello from App Number One!');

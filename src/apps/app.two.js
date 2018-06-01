@@ -1,9 +1,9 @@
 var tpo = require("third-party-one");
-var _ = require('lodash');
+var toUpper = require('lodash/toUpper');
 
 require("../components/common.component");
 require('../components/mostly.common.component');
 
 tpo.AwesomeFunc();
 
-module.exports = _.toUpper('Hello from App Number Two!');
+module.exports = toUpper('Hello from App Number Two!');
