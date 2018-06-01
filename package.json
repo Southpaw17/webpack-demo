@@ -4,12 +4,12 @@
   "description": "A brief demonstration of how some of the features of webpack interact",
   "main": "index.js",
   "scripts": {
-    "webpack": "webpack",
+    "webpack": "webpack -p",
     "prewebpack": "npm run clean",
     "clean": "rimraf ./dist",
-    "next-step": "git checkout step/seven",
+    "next-step": "git checkout step/eight",
     "postnext-step": "npm run webpack",
-    "last-step": "git checkout step/five",
+    "last-step": "git checkout step/six",
     "postlast-step": "npm run webpack"
   },
   "repository": {
@@ -34,6 +34,8 @@
     "webpack-bundle-analyzer": "^2.13.1"
   },
   "dependencies": {
+    "lodash": "^4.17.10",
+    "rxjs": "^6.2.0",
     "third-party-one": "file:packages/third-party-one"
   }
 }
