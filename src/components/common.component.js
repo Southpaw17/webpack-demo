@@ -1,4 +1,3 @@
-
 define(function(require) {
     require('./common.component.html');
 
