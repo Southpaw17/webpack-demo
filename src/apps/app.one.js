@@ -1,8 +1,8 @@
 import * as tpo from 'third-party-one';
-// import { from } from 'rxjs';
+import _ from 'lodash';
 
 import '../components/common.component';
 import '../components/mostly.common.component';
 
 
-export default from('Hello from App Number One!');
+export default _.toLower('Hello from App Number One!');
