@@ -7,9 +7,9 @@
     "webpack": "webpack -p",
     "prewebpack": "npm run clean",
     "clean": "rimraf ./dist",
-    "next-step": "git checkout step/four",
+    "next-step": "git checkout step/five",
     "postnext-step": "npm run webpack",
-    "last-step": "git checkout master",
+    "last-step": "git checkout step/three",
     "postlast-step": "npm run webpack"
   },
   "repository": {
